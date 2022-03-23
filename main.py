@@ -71,7 +71,7 @@ def handle_audio(message):
     data = loop.run_until_complete(recognize(file_local_path))
 
     if duration > 15:
-        bot.reply_to(message, "Please try sending a shorter sample!)
+        bot.reply_to(message, "Please try sending a shorter sample!")
     elif not data["matches"]:
         bot.reply_to(message, "😶 Oops Not Found !!!\n\n✍️ Always use a portion of the music you want to find.\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️")
     else:
