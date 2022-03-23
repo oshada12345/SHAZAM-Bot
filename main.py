@@ -13,7 +13,7 @@ TEMP_FOLDER = ".temp"
 if not os.path.exists(TEMP_FOLDER):
     os.mkdir(TEMP_FOLDER)
 
-with open("TOKEN") as token_file:
+with open("BOT_TOKEN") as token_file:
     TOKEN = token_file.read().strip()  # read token string from plaintext file named TOKEN
 
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
