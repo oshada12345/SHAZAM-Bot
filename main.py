@@ -6,7 +6,7 @@ import requests
 import asyncio
 from shazamio import Shazam, serialize_track
 
-bot = telebot.TeleBot(getenv("BOT_TOKEN"))
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 TEMP_FOLDER = ".temp"
 
